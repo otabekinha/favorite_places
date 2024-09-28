@@ -24,9 +24,9 @@ class PlacesList extends StatelessWidget {
           bottom: 0,
         ),
         child: ListTile(
-          leading: const Icon(
-            Icons.location_on_outlined,
-            color: Colors.deepPurple,
+          leading: CircleAvatar(
+            radius: 20,
+            backgroundImage: FileImage(places[index].image),
           ),
           title: Text(places[index].title),
           trailing: const Icon(
